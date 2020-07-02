@@ -1,0 +1,67 @@
+<!--pages/cart/cart.wxml-->
+<view >
+    <!-- 收货地址 -->
+    <view class="address-row" >
+        <view class="address-btn" wx:if="{{!address.userName}}">
+            <button type="primary" plain="{{true}}" bind:tap="changeAddress">获取收货地址</button>
+        </view>
+        <view class="address-info" wx:else>
+            <view class="user-info">
+                <view >{{address.userName}}</view>
+                <view >{{addressAll}}</view>
+            </view>
+            <view class="user-phone">{{address.telNumber}}</view>
+        </view>
+    </view>
+
+    <view class="cart-content">
+        <view class="cart-title">购物车</view>
+        <view class="cart-main">
+        <block wx:if="{{cart.length !== 0}}">
+            <view class="cart-item" wx:for="{{cart}}">
+                <view class="item-check">
+                    <checkbox-group data-id="{{item.goods_id}}" bindchange="itemChange">
+                            <checkbox checked="{{item.check}}"  /> 
+                    </checkbox-group>
+                </view>
+                <view class="item-img">
+                    <image mode="widthFix" src="{{item.goods_small_logo}}"/>
+                    <!-- <image mode="widthFix" src=""/> -->
+                </view>
+                <view class="item-info">
+                        <view class="goods-name">{{item.goods_name}}</view>
+                        <view class="goods-detail">
+                            <view class="goods-price">{{item.goods_price}}</view>
+                            <view class="goods-tool">
+                                <view class="count-edit"  bind:tap="countChange" data-id="{{item.goods_id}}"
+                                 data-operation="-1">-</view>
+                                <view class="goods-count">{{item.count}}</view>
+                                <view class="count-edit" bind:tap="countChange" data-id="{{item.goods_id}}"
+                                 data-operation="1">+</view>
+                            </view>
+                        </view>
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <image mode="widthFix" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593405345504&di=3862c260562cced99499a9110a1163e6&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fe1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"/>
+        </block>
+            
+        </view>
+    </view>
+
+    <view class="footer-tool">
+        <view class="check-all">
+            <checkbox-group bindchange="allCheck">
+                <checkbox checked="{{checkAll}}"></checkbox>全选
+            </checkbox-group>
+        </view>
+        <view class="total-price">
+            总计：<text class="price-txt">{{totalPrice}}</text>
+            <view >包含运费</view>
+        </view>
+        <view class="pay" bind:tap="pay">
+            结算（{{totalCount}}）
+        </view>
+    </view>
+</view>

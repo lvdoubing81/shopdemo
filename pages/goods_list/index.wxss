@@ -1,0 +1,28 @@
+.list .list-item {
+  display: flex;
+}
+.list .list-item .left-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list .list-item .left-image image {
+  width: 60%;
+}
+.list .list-item .right-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.list .list-item .right-content .item-title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.list .list-item .right-content .item-price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

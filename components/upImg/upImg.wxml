@@ -1,0 +1,7 @@
+<!--components/upImg/upImg.wxml-->
+<view >
+    <view class="img-box">
+        <image src="{{imgs}}" />
+        <icon type="clear" size="14" color="red" />
+    </view>
+</view>

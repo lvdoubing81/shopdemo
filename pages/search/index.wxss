@@ -1,0 +1,28 @@
+/* pages/search/index.wxss */
+.search-input {
+  padding: 12rpx 24rpx;
+  height: 90rpx;
+  display: flex;
+  background-color: #eee;
+}
+.search-input input {
+  padding-left: 24rpx;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 100%;
+  flex: 1;
+  margin-right: 24rpx;
+}
+.search-input button {
+  text-align: center;
+  font-size: 28rpx;
+}
+.search-box .search-item {
+  font-size: 28rpx;
+  margin: 24rpx;
+  padding-bottom: 24rpx;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

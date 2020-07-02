@@ -1,0 +1,37 @@
+.cates-content {
+  height: calc( 100vh - 90rpx );
+  display: flex;
+}
+.cates-content .left-menu {
+  flex: 2;
+}
+.cates-content .left-menu .menu-list {
+  padding: 20rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.cates-content .right-content {
+  flex: 5;
+}
+.cates-content .right-content .right-item .item-title {
+  margin: 24rpx;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cates-content .right-content .right-item .item-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cates-content .right-content .right-item .item-item {
+  padding: 12rpx;
+  text-align: center;
+  box-sizing: border-box;
+  width: 33%;
+  display: inline-block;
+}
+.cates-content .right-content .right-item .item-item image {
+  width: 100%;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}

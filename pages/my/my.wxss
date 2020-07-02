@@ -1,0 +1,117 @@
+page {
+  height: 100vh;
+  background-color: #eee;
+}
+page .user-info-wrap {
+  height: 45vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #eee;
+}
+page .user-info-wrap .user-img-wrap .user-bg {
+  height: 50vh;
+  width: 100%;
+  filter: blur(5px);
+}
+page .user-info-wrap .user-img-wrap .user-info {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+}
+page .user-info-wrap .user-img-wrap .user-info .user-icon {
+  width: 150rpx;
+  height: 150rpx;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+}
+page .user-info-wrap .user-img-wrap .user-info .user-name {
+  margin-top: 48rpx;
+  color: #ffffff;
+  font-size: 32rpx;
+}
+page .user-info-wrap .login-btn button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 30%;
+}
+page .user-body {
+  padding-bottom: 100rpx;
+  color: #999;
+  background-color: #ddd;
+  position: relative;
+}
+page .user-body .user-main {
+  background-color: #ffffff;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+}
+page .user-body .user-main .history-box {
+  margin: 12rpx 0;
+  display: flex;
+}
+page .user-body .user-main .history-box .history-item {
+  flex: 1;
+  justify-content: center;
+}
+page .user-body .user-main .history-box .history-item .item-num {
+  text-align: center;
+  color: var(--themeColor);
+}
+page .user-body .user-main .history-box .history-item .item-name {
+  padding: 12rpx 0;
+  text-align: center;
+}
+page .user-body .user-main .order-main {
+  border-top: 24rpx solid #eee;
+}
+page .user-body .user-main .order-main .order-title {
+  padding: 24rpx 12rpx;
+  border-bottom: 1px solid #eee;
+}
+page .user-body .user-main .order-main .order-box {
+  display: flex;
+}
+page .user-body .user-main .order-main .order-box .order-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18rpx 0;
+}
+page .user-body .user-main .order-main .order-box .order-item .order-icon {
+  font-size: 40rpx;
+  color: var(--themeColor);
+  display: flex;
+  justify-content: center;
+}
+page .user-body .user-main .order-main .order-box .order-item .icon-small {
+  margin-top: 6rpx;
+  font-size: 30rpx;
+}
+page .user-body .user-main .order-main .order-box .order-item .order-name {
+  text-align: center;
+}
+page .user-body .user-main .address-change,
+page .user-body .user-main .share {
+  border-top: 24rpx solid #eee;
+  border-bottom: 24rpx solid #eee;
+  padding: 24rpx 12rpx;
+}
+page .user-body .user-main .other .contact {
+  padding: 24rpx 12rpx;
+  display: flex;
+  justify-content: space-between;
+}
+page .user-body .user-main .other .feedback,
+page .user-body .user-main .other .about {
+  padding: 24rpx 12rpx;
+  border-top: 1px solid #eee;
+}

@@ -1,0 +1,86 @@
+.detail-body {
+  padding-bottom: 90rpx;
+}
+.detail-body swiper {
+  margin-top: 12rpx;
+  height: 70vw;
+  text-align: center;
+}
+.detail-body swiper image {
+  width: 60%;
+  border: solid 15rpx #eee;
+}
+.detail-body .goods-price {
+  padding-left: 24rpx;
+  font-size: 36rpx;
+  color: var(--themeColor);
+}
+.detail-body .goods-name {
+  display: flex;
+  padding: 12rpx;
+  border-bottom: solid 15rpx #eee;
+}
+.detail-body .goods-name .goods-name-item {
+  flex: 5;
+  color: #000;
+  font-size: 32rpx;
+  padding: 0 12rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.detail-body .goods-name .goods-collect {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: solid 1px #eeee;
+}
+.detail-body .goods-name .goods-collect .collect {
+  color: #FF5B05;
+}
+.detail-body .text-title {
+  font-size: 36rpx;
+  color: var(--themeColor);
+  font-weight: 600;
+  padding: 20rpx;
+}
+.detail-body .btm-tool {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 90rpx;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  font-size: 24rpx;
+}
+.detail-body .btm-tool .tool-item {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.detail-body .btm-tool .tool-item button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.detail-body .btm-tool .btn-cart {
+  flex: 3;
+  background-color: #FFA300;
+  color: #fff;
+}
+.detail-body .btm-tool .btn-buy {
+  flex: 3;
+  background-color: #F8534C;
+  color: #fff;
+}

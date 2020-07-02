@@ -1,0 +1,50 @@
+/* pages/collect/index.less */
+.collecet-body {
+  background-color: #eee;
+}
+.collecet-body .collect-title {
+  display: flex;
+  padding: 24rpx 0;
+  background-color: #eee;
+}
+.collecet-body .collect-title .title-tip {
+  border-radius: 5px;
+  padding: 12rpx;
+  margin-left: 24rpx;
+  background-color: #fff;
+}
+.collecet-body .collect-title .active {
+  color: var(--themeColor);
+  border: currentColor 1px solid;
+}
+.collecet-body .list .list-item {
+  padding: 12rpx 0;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.collecet-body .list .list-item .left-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collecet-body .list .list-item .left-image image {
+  width: 60%;
+}
+.collecet-body .list .list-item .right-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collecet-body .list .list-item .right-content .item-title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collecet-body .list .list-item .right-content .item-price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

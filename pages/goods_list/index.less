@@ -1,0 +1,30 @@
+.list{
+    .list-item{
+        display: flex;
+        .left-image{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            image{
+                width: 60%;
+            }
+        }
+        .right-content{
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .item-title{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+            .item-price{
+                color: var(--themeColor);
+                font-size: 32rpx;
+            }
+        }
+    }
+}
